@@ -1,0 +1,70 @@
+"use client";
+
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
+const QUOTES = [
+  {
+    text: "I said something out loud I've been thinking for months. To strangers. And it felt amazing.",
+    name: "Mia",
+    detail: "after her first spill",
+  },
+  {
+    text: "I almost deleted it. Then someone resonated and said 'I feel that too.' I literally cried.",
+    name: "James",
+    detail: "day 3",
+  },
+  {
+    text: "I filmed my ceiling fan for 2 minutes talking about my dad. Most honest I've been in years.",
+    name: "Sarah",
+    detail: "after her first spill",
+  },
+];
+
+export default function Testimonials() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+
+  return (
+    <section ref={ref} className="py-16 md:py-24 px-6 relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-border to-transparent" />
+
+      <div className="max-w-5xl mx-auto">
+        <motion.p
+          className="text-center text-sm text-lime font-semibold uppercase tracking-[0.2em] mb-10"
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.5 }}
+        >
+          After their first spill
+        </motion.p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {QUOTES.map((q, i) => (
+            <motion.div
+              key={i}
+              className="relative"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.1 + i * 0.15 }}
+            >
+              <div className="glass rounded-2xl border border-gray-border p-6 h-full">
+                {/* Quote mark */}
+                <span className="text-3xl text-lime/20 font-serif leading-none">&ldquo;</span>
+                <p className="text-base text-foreground leading-relaxed mt-1 mb-4">
+                  {q.text}
+                </p>
+                <div className="flex items-center gap-2">
+                  <div className="w-1 h-1 bg-lime rounded-full" />
+                  <span className="text-xs text-gray">
+                    <span className="text-foreground font-medium">{q.name}</span> — {q.detail}
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

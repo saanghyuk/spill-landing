@@ -1,0 +1,231 @@
+"use client";
+
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
+export default function HowItWorks() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
+
+  return (
+    <section ref={ref} className="py-24 md:py-40 px-6 relative">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-border to-transparent" />
+
+      <div className="max-w-4xl mx-auto">
+        <motion.div
+          className="text-center mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7 }}
+        >
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
+            How Spill works
+          </h2>
+        </motion.div>
+
+        {/* Steps */}
+        <div className="space-y-16 md:space-y-24">
+          {/* Step 1 */}
+          <motion.div
+            className="flex flex-col md:flex-row items-center gap-8 md:gap-16"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            <div className="flex-1">
+              <div className="text-6xl font-black text-lime/10 mb-2">01</div>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+                A question drops.
+                <br />
+                <span className="text-gray">Same one for everyone.</span>
+              </h3>
+              <p className="text-gray leading-relaxed">
+                Every day at noon, a question drops for everyone on Spill.
+                Not small talk — the kind that makes you actually want to answer.
+                It disappears in 12 hours. If you feel it, just go.
+              </p>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <div className="glass rounded-2xl p-6 border border-gray-border w-full max-w-sm">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-2 h-2 bg-lime rounded-full animate-pulse" />
+                  <span className="text-[11px] text-lime font-semibold tracking-widest uppercase">12:00 PM — Today&apos;s question</span>
+                </div>
+                <p className="text-lg sm:text-xl font-bold leading-snug">
+                  &ldquo;What&apos;s something you pretend doesn&apos;t bother you?&rdquo;
+                </p>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="text-xs text-gray">Gone in 11h 23m</span>
+                  <span className="text-xs text-lime font-semibold bg-lime/10 px-3 py-1 rounded-full">Answer →</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Step 2 — Personal question */}
+          <motion.div
+            className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-16"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.15 }}
+          >
+            <div className="flex-1">
+              <div className="text-6xl font-black text-lime/10 mb-2">02</div>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+                Plus one question
+                <br />
+                <span className="text-gray">just for you.</span>
+              </h3>
+              <p className="text-gray leading-relaxed">
+                At midnight, you get a question no one else gets.
+                AI remembers what you&apos;ve said and asks the follow-up
+                a good friend would. You just answer — that&apos;s it.
+              </p>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <div className="w-full max-w-sm space-y-3">
+                {/* Yesterday's answer */}
+                <div className="glass rounded-xl px-4 py-3 border border-gray-border">
+                  <span className="text-[10px] text-gray">You said yesterday</span>
+                  <p className="text-sm text-foreground/70 italic mt-1">
+                    &ldquo;I&apos;ve been thinking about quitting my job.&rdquo;
+                  </p>
+                </div>
+                {/* Arrow */}
+                <div className="flex justify-center">
+                  <div className="w-8 h-8 rounded-full bg-lime/10 border border-lime/20 flex items-center justify-center">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="text-lime">
+                      <path d="M12 5v14M19 12l-7 7-7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                {/* AI's personal question */}
+                <div className="glass rounded-xl px-4 py-4 border border-lime/20 bg-lime/[0.04]">
+                  <div className="flex items-center gap-1.5 mb-2">
+                    <div className="w-4 h-4 rounded-full bg-lime flex items-center justify-center">
+                      <span className="text-[7px] text-background font-bold">AI</span>
+                    </div>
+                    <span className="text-[10px] text-lime font-semibold uppercase tracking-wider">12:00 AM — Your personal question</span>
+                  </div>
+                  <p className="text-base font-bold leading-snug">
+                    &ldquo;If you quit tomorrow, what&apos;s the first thing you&apos;d do?&rdquo;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Step 3 */}
+          <motion.div
+            className="flex flex-col md:flex-row items-center gap-8 md:gap-16"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.25 }}
+          >
+            <div className="flex-1">
+              <div className="text-6xl font-black text-lime/10 mb-2">03</div>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+                Hit record. Talk.
+                <br />
+                <span className="text-gray">Point the camera anywhere.</span>
+              </h3>
+              <p className="text-gray leading-relaxed">
+                Point the camera wherever — your face, your ceiling, whatever feels right.
+                3 minutes max. No filters. No editing. No retakes.
+                You don&apos;t need to be good at this. Just be you.
+              </p>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <div className="grid grid-cols-3 gap-2 w-full max-w-sm">
+                {[
+                  { img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&h=300&fit=crop&crop=face", label: "" },
+                  { img: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=200&h=300&fit=crop", label: "" },
+                  { img: "https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?w=200&h=300&fit=crop", label: "" },
+                ].map((t, i) => (
+                  <div key={i} className="relative aspect-[9/14] rounded-xl overflow-hidden">
+                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${t.img}')` }} />
+                    <div className="absolute inset-0 bg-black/30" />
+                    {/* Recording dot */}
+                    <div className="absolute top-2 left-2 flex items-center gap-1">
+                      <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+                      <span className="text-[8px] text-white font-medium">REC</span>
+                    </div>
+                    {/* Waveform */}
+                    <div className="absolute bottom-2 left-2 right-2 flex items-end gap-[1px] h-2">
+                      {[2,4,3,5,3,4,2,5,3,4,2,3].map((h, j) => (
+                        <div key={j} className="flex-1 bg-lime/50 rounded-full" style={{ height: `${h}px` }} />
+                      ))}
+                    </div>
+                    {t.label && (
+                      <div className="absolute bottom-6 left-2">
+                        <span className="text-[8px] text-white/60">{t.label}</span>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Step 4 */}
+          <motion.div
+            className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-16"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.35 }}
+          >
+            <div className="flex-1">
+              <div className="text-6xl font-black text-lime/10 mb-2">04</div>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+                People resonate.
+                <br />
+                <span className="text-gray">Not &ldquo;like.&rdquo; Resonate.</span>
+              </h3>
+              <p className="text-gray leading-relaxed">
+                No comments. No likes. When your words hit someone, they resonate —
+                &ldquo;I feel that too,&rdquo; &ldquo;That took courage.&rdquo;
+                The more you answer, the more you discover people like you — and people completely different from you.
+              </p>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <div className="w-full max-w-sm space-y-3">
+                {[
+                  { name: "Mia", msg: "I feel that too", avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&h=60&fit=crop&crop=face", mutual: false },
+                  { name: "James", msg: "That took courage", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=face", mutual: true },
+                  { name: "Yuna", msg: "Sending a hug", avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face", mutual: false },
+                ].map((r, i) => (
+                  <motion.div
+                    key={i}
+                    className={`glass rounded-xl px-4 py-3 border flex items-center gap-3 ${
+                      r.mutual ? "border-lime/30 bg-lime/[0.05]" : "border-gray-border"
+                    }`}
+                    initial={{ opacity: 0, x: 30 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : {}}
+                    transition={{ delay: 0.6 + i * 0.15 }}
+                  >
+                    <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={r.avatar} alt={r.name} className="w-full h-full object-cover" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-sm font-semibold">{r.name}</span>
+                        {r.mutual && (
+                          <span className="text-[9px] text-lime font-bold bg-lime/10 px-1.5 py-0.5 rounded-full">Mutual</span>
+                        )}
+                      </div>
+                      <span className="text-xs text-gray">resonated</span>
+                    </div>
+                    <span className="text-[11px] text-lime font-medium bg-lime/10 px-2.5 py-1 rounded-full flex-shrink-0">
+                      {r.msg}
+                    </span>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
