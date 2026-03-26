@@ -59,9 +59,9 @@ export default function EmotionalHook() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          One question. 60 seconds. Back camera.
+          Back camera. 60 seconds. Just talk.
           <br />
-          That&apos;s it. You&apos;d be surprised what comes out.
+          You&apos;d be surprised what comes out.
         </motion.p>
 
         <motion.div
@@ -93,8 +93,8 @@ export default function EmotionalHook() {
               </>
             )}
           </form>
-          <p className="text-xs text-gray">
-            First <span className="text-lime font-semibold">1,000</span> get in. Limited access.
+          <p className="text-sm text-gray">
+            First <span className="text-lime font-bold">1,000</span> get early access. <span className="text-foreground font-semibold">After that, invitation only.</span>
           </p>
         </motion.div>
       </motion.div>

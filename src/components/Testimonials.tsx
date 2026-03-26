@@ -51,12 +51,12 @@ export default function Testimonials() {
               <div className="glass rounded-2xl border border-gray-border p-6 h-full">
                 {/* Quote mark */}
                 <span className="text-3xl text-lime/20 font-serif leading-none">&ldquo;</span>
-                <p className="text-base text-foreground leading-relaxed mt-1 mb-4">
+                <p className="text-base sm:text-lg text-foreground leading-relaxed mt-1 mb-4">
                   {q.text}
                 </p>
                 <div className="flex items-center gap-2">
                   <div className="w-1 h-1 bg-lime rounded-full" />
-                  <span className="text-xs text-gray">
+                  <span className="text-sm text-gray">
                     <span className="text-foreground font-medium">{q.name}</span> — {q.detail}
                   </span>
                 </div>

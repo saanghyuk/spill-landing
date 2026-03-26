@@ -4,11 +4,11 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const ARCHIVE_DAYS = [
-  { date: "Mar 26, 2026", question: "What are you afraid to say out loud?", hasAnswer: true },
-  { date: "Mar 25, 2026", question: "What episode of your life are you on?", hasAnswer: true },
-  { date: "Mar 24, 2026", question: "When was the last time you cried?", hasAnswer: false },
-  { date: "Mar 23, 2026", question: "What are you putting off?", hasAnswer: true },
-  { date: "Mar 22, 2026", question: "What do you think about before sleep?", hasAnswer: true },
+  { date: "Mar 26, 2026", question: "What's the most useless thing you're good at?", hasAnswer: true },
+  { date: "Mar 25, 2026", question: "What are you overthinking right now?", hasAnswer: true },
+  { date: "Mar 24, 2026", question: "What's your go-to comfort food?", hasAnswer: false },
+  { date: "Mar 23, 2026", question: "Who would you call if your phone was dying?", hasAnswer: true },
+  { date: "Mar 22, 2026", question: "What changed your mind recently?", hasAnswer: true },
 ];
 
 export default function TimeCapsule() {
@@ -58,14 +58,14 @@ export default function TimeCapsule() {
                     <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="currentColor" strokeWidth="1.5" />
                     <path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                   </svg>
-                  <span className="text-xs text-lime font-semibold tracking-widest uppercase">
+                  <span className="text-xs sm:text-sm text-lime font-semibold tracking-widest uppercase">
                     1 year ago today
                   </span>
                 </div>
 
                 <p className="text-sm text-gray mb-2">March 26, 2025</p>
                 <p className="text-base font-semibold mb-4">
-                  &ldquo;What were you most afraid of back then?&rdquo;
+                  &ldquo;What were you overthinking back then?&rdquo;
                 </p>
 
                 {/* Fake video thumbnail */}
@@ -79,7 +79,7 @@ export default function TimeCapsule() {
                       <div className="w-0 h-0 border-l-[10px] border-l-lime border-t-[7px] border-t-transparent border-b-[7px] border-b-transparent ml-1" />
                     </div>
                   </div>
-                  <div className="absolute bottom-2 right-2 text-[10px] text-white/60 bg-black/40 px-2 py-0.5 rounded">
+                  <div className="absolute bottom-2 right-2 text-xs text-white/80 bg-black/40 px-2 py-0.5 rounded">
                     1:47
                   </div>
                 </div>
@@ -127,7 +127,7 @@ export default function TimeCapsule() {
 
                   {/* Question */}
                   <p className={`text-sm flex-1 ${
-                    i === 0 ? "text-foreground font-medium" : day.hasAnswer ? "text-gray" : "text-gray/50 line-through"
+                    i === 0 ? "text-foreground font-medium" : day.hasAnswer ? "text-gray" : "text-gray/70 line-through"
                   }`}>
                     {day.question}
                   </p>
@@ -140,14 +140,14 @@ export default function TimeCapsule() {
                       ))}
                     </div>
                   ) : (
-                    <span className="text-[10px] text-gray/50">skipped</span>
+                    <span className="text-xs text-gray/70">skipped</span>
                   )}
                 </motion.div>
               ))}
             </div>
 
             <motion.p
-              className="text-xs text-gray mt-4 text-center md:text-left"
+              className="text-xs sm:text-sm text-gray mt-4 text-center md:text-left"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ delay: 1 }}

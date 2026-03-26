@@ -18,7 +18,7 @@ export default function HowItWorks() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black">
             How Spill works
           </h2>
         </motion.div>
@@ -40,23 +40,23 @@ export default function HowItWorks() {
                 <span className="text-gray">Same one for everyone.</span>
               </h3>
               <p className="text-gray leading-relaxed">
-                Every morning at 9AM, everyone on Spill gets the same question.
-                Sometimes funny, sometimes deep — always the kind you actually want to answer.
-                Gone in 12 hours.
+                Every morning at 9AM, everyone gets the same question.
+                Sometimes funny, sometimes deep. Answer it, and see what everyone else said.
+                The question disappears in 12 hours — but your answer stays.
               </p>
             </div>
             <div className="flex-1 flex justify-center">
               <div className="glass rounded-2xl p-6 border border-gray-border w-full max-w-sm">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="w-2 h-2 bg-lime rounded-full animate-pulse" />
-                  <span className="text-[11px] text-lime font-semibold tracking-widest uppercase">9:00 AM — Today&apos;s question</span>
+                  <span className="text-xs sm:text-sm text-lime font-semibold tracking-widest uppercase">9:00 AM — Today&apos;s question</span>
                 </div>
                 <p className="text-lg sm:text-xl font-bold leading-snug">
                   &ldquo;What&apos;s the most useless thing you&apos;re weirdly good at?&rdquo;
                 </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-xs text-gray">Gone in 11h 23m</span>
-                  <span className="text-xs text-lime font-semibold bg-lime/10 px-3 py-1 rounded-full">Answer →</span>
+                  <span className="text-sm text-gray">Gone in 11h 23m</span>
+                  <span className="text-sm text-lime font-semibold bg-lime/10 px-3 py-1.5 rounded-full">Spill →</span>
                 </div>
               </div>
             </div>
@@ -78,17 +78,17 @@ export default function HowItWorks() {
               </h3>
               <p className="text-gray leading-relaxed">
                 At 9PM, you get a question only you get.
-                AI picks up on what you&apos;ve been talking about and asks the next thing.
-                Like a friend who actually remembers what you said yesterday.
+                AI picks up on what you&apos;ve been saying and asks the next thing —
+                like a friend who actually remembers. The more you answer, the more you learn about yourself.
               </p>
             </div>
             <div className="flex-1 flex justify-center">
               <div className="w-full max-w-sm space-y-3">
                 {/* Yesterday's answer */}
                 <div className="glass rounded-xl px-4 py-3 border border-gray-border">
-                  <span className="text-[10px] text-gray">You said yesterday</span>
+                  <span className="text-xs sm:text-sm text-gray">You said yesterday</span>
                   <p className="text-sm text-foreground/70 italic mt-1">
-                    &ldquo;I&apos;ve been thinking about quitting my job.&rdquo;
+                    &ldquo;I keep saying I&apos;ll start working out tomorrow.&rdquo;
                   </p>
                 </div>
                 {/* Arrow */}
@@ -105,10 +105,10 @@ export default function HowItWorks() {
                     <div className="w-4 h-4 rounded-full bg-lime flex items-center justify-center">
                       <span className="text-[7px] text-background font-bold">AI</span>
                     </div>
-                    <span className="text-[10px] text-lime font-semibold uppercase tracking-wider">9:00 PM — Your personal question</span>
+                    <span className="text-xs text-lime font-semibold uppercase tracking-wider">9:00 PM — Your personal question</span>
                   </div>
                   <p className="text-base font-bold leading-snug">
-                    &ldquo;If you quit tomorrow, what&apos;s the first thing you&apos;d do?&rdquo;
+                    &ldquo;What&apos;s the real reason you keep pushing it?&rdquo;
                   </p>
                 </div>
               </div>
@@ -137,9 +137,9 @@ export default function HowItWorks() {
             <div className="flex-1 flex justify-center">
               <div className="grid grid-cols-3 gap-2 w-full max-w-sm">
                 {[
-                  { img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&h=300&fit=crop&crop=face", label: "" },
-                  { img: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=200&h=300&fit=crop", label: "" },
-                  { img: "https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?w=200&h=300&fit=crop", label: "" },
+                  { img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=200&h=300&fit=crop", label: "" },
+                  { img: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=200&h=300&fit=crop", label: "" },
+                  { img: "https://images.unsplash.com/photo-1501999635878-71cb5379c2d8?w=200&h=300&fit=crop", label: "" },
                 ].map((t, i) => (
                   <div key={i} className="relative aspect-[9/14] rounded-xl overflow-hidden">
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${t.img}')` }} />
@@ -147,7 +147,7 @@ export default function HowItWorks() {
                     {/* Recording dot */}
                     <div className="absolute top-2 left-2 flex items-center gap-1">
                       <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-                      <span className="text-[8px] text-white font-medium">REC</span>
+                      <span className="text-xs text-white font-medium">REC</span>
                     </div>
                     {/* Waveform */}
                     <div className="absolute bottom-2 left-2 right-2 flex items-end gap-[1px] h-2">
@@ -157,7 +157,7 @@ export default function HowItWorks() {
                     </div>
                     {t.label && (
                       <div className="absolute bottom-6 left-2">
-                        <span className="text-[8px] text-white/60">{t.label}</span>
+                        <span className="text-xs text-white/80">{t.label}</span>
                       </div>
                     )}
                   </div>
@@ -189,9 +189,9 @@ export default function HowItWorks() {
             <div className="flex-1 flex justify-center">
               <div className="w-full max-w-sm space-y-3">
                 {[
-                  { name: "Mia", msg: "I feel that too", avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&h=60&fit=crop&crop=face", mutual: false },
-                  { name: "James", msg: "That took courage", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=face", mutual: true },
-                  { name: "Yuna", msg: "Sending a hug", avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face", mutual: false },
+                  { name: "@night_owl_92", emoji: "🦉", msg: "I feel that too", mutual: false },
+                  { name: "@quiet_storm", emoji: "🌧", msg: "That took courage", mutual: true },
+                  { name: "@just.me.here", emoji: "🌙", msg: "same 😂", mutual: false },
                 ].map((r, i) => (
                   <motion.div
                     key={i}
@@ -202,20 +202,19 @@ export default function HowItWorks() {
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ delay: 0.6 + i * 0.15 }}
                   >
-                    <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={r.avatar} alt={r.name} className="w-full h-full object-cover" />
+                    <div className="w-9 h-9 rounded-full bg-gray-dark flex items-center justify-center text-lg flex-shrink-0">
+                      {r.emoji}
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1.5">
                         <span className="text-sm font-semibold">{r.name}</span>
                         {r.mutual && (
-                          <span className="text-[9px] text-lime font-bold bg-lime/10 px-1.5 py-0.5 rounded-full">Mutual</span>
+                          <span className="text-xs text-lime font-bold bg-lime/10 px-1.5 py-0.5 rounded-full">Mutual</span>
                         )}
                       </div>
-                      <span className="text-xs text-gray">resonated</span>
+                      <span className="text-sm text-gray">resonated</span>
                     </div>
-                    <span className="text-[11px] text-lime font-medium bg-lime/10 px-2.5 py-1 rounded-full flex-shrink-0">
+                    <span className="text-sm text-lime font-medium bg-lime/10 px-2.5 py-1 rounded-full flex-shrink-0">
                       {r.msg}
                     </span>
                   </motion.div>

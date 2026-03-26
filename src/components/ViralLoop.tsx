@@ -48,20 +48,16 @@ export default function ViralLoop() {
               transition={{ delay: 0.3 }}
             >
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
-                    alt="Marcus" className="w-full h-full object-cover"
-                  />
+                <div className="w-12 h-12 rounded-full bg-gray-dark flex items-center justify-center text-2xl flex-shrink-0">
+                  ☕
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-sm font-semibold">Marcus</span>
-                    <span className="text-xs text-gray">answered</span>
+                    <span className="text-sm font-semibold">@late_night_m</span>
+                    <span className="text-sm text-gray">answered</span>
                   </div>
                   <p className="text-sm text-foreground/80 italic">
-                    &ldquo;I almost told my best friend I&apos;m jealous of his life...&rdquo;
+                    &ldquo;I think I&apos;m the friend that cares more and I can&apos;t stop noticing it...&rdquo;
                   </p>
                 </div>
                 <div className="flex items-end gap-[2px] h-4 flex-shrink-0">
@@ -132,7 +128,7 @@ export default function ViralLoop() {
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className={step >= 2 ? "text-background" : "text-foreground"}>
                     <path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
                   </svg>
-                  Answer this too
+                  Spill this too
                 </motion.button>
               </div>
             </motion.div>
@@ -151,15 +147,15 @@ export default function ViralLoop() {
                       <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse" />
                       <span className="text-sm font-bold text-foreground">Now you&apos;re spilling</span>
                     </div>
-                    <span className="text-xs text-gray">0:12 / 1:00</span>
+                    <span className="text-xs sm:text-sm text-gray">0:12 / 1:00</span>
                   </div>
                   <div className="glass rounded-xl px-4 py-3 border border-gray-border">
-                    <p className="text-xs text-lime font-medium mb-1">Answering the same question</p>
+                    <p className="text-xs text-lime font-medium mb-1">Spilling on the same question</p>
                     <p className="text-sm font-semibold">
-                      &ldquo;What&apos;s something you almost said today but held back?&rdquo;
+                      &ldquo;What&apos;s something you noticed but didn&apos;t say?&rdquo;
                     </p>
                   </div>
-                  <p className="text-xs text-gray mt-3 text-center italic">
+                  <p className="text-xs sm:text-sm text-gray mt-3 text-center italic">
                     One answer leads to another. That&apos;s how Spill grows.
                   </p>
                 </div>

@@ -5,53 +5,59 @@ import { useRef } from "react";
 
 const SPILLS = [
   {
-    // Casual selfie - guy in hoodie, not a model headshot
-    image: "https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?w=400&h=600&fit=crop&crop=face",
-    label: "just got home, had to say this",
-    question: "What are you putting off?",
-    name: "Marcus, 28",
+    // POV: looking at messy desk with coffee - back camera, what you see working
+    image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=400&h=600&fit=crop",
+    label: "at my desk, 11pm",
+    question: "What's your worst habit you're not fixing?",
+    name: "@late_night_m",
+    time: "3m ago",
     resonates: 247,
   },
   {
-    // POV: looking at laptop keyboard/screen - what you see at a desk
-    image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=400&h=600&fit=crop",
-    label: "at my desk, 11pm",
-    question: "When did you last feel free?",
-    name: "James, 31",
+    // POV: coffee cup from above - classic back camera shot
+    image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=600&fit=crop",
+    label: "morning coffee",
+    question: "What are you overthinking right now?",
+    name: "@coffeeandchill",
+    time: "7m ago",
     resonates: 183,
   },
   {
-    // Dark room - CSS gradient, nearly black
+    // Dark room - CSS gradient, nearly black - back camera in the dark
     image: "",
     dark: true,
     label: "lights off, just talking",
-    question: "What do you think about at 2am?",
-    name: "Sarah, 24",
+    question: "What do you think about before sleep?",
+    name: "@anonymous_owl",
+    time: "12m ago",
     resonates: 312,
   },
   {
-    // POV: messy bed/blanket - just woke up or lying down, phone in hand
+    // POV: messy bed/blanket from lying down - back camera pointing at sheets
     image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=600&fit=crop",
-    label: "lying in bed, just talking",
-    question: "What episode of life are you on?",
-    name: "Alex, 27",
+    label: "lazy sunday",
+    question: "What's your hottest take nobody asked for?",
+    name: "@pillow_thoughts",
+    time: "18m ago",
     resonates: 156,
   },
   {
-    // Girl casual selfie - warm, natural, not model-like
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=600&fit=crop&crop=face",
-    label: "couldn't sleep",
-    question: "What changed your mind recently?",
-    name: "Hana, 23",
+    // POV: rainy window at night - back camera pointed at window
+    image: "https://images.unsplash.com/photo-1501999635878-71cb5379c2d8?w=400&h=600&fit=crop",
+    label: "rainy night",
+    question: "Who would you call if your phone was dying?",
+    name: "@hana.k",
+    time: "25m ago",
     resonates: 201,
   },
   {
-    // Ceiling - CSS, plain dim surface
+    // Ceiling - CSS, plain dim surface - back camera pointed straight up
     image: "",
     ceiling: true,
-    label: "staring at the ceiling",
-    question: "What are you afraid to say?",
-    name: "Mia, 26",
+    label: "3am, staring up",
+    question: "What's keeping you up tonight?",
+    name: "@cant_sleep_again",
+    time: "31m ago",
     resonates: 289,
   },
 ];
@@ -71,14 +77,15 @@ export default function Voices() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-5">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
             Film what you see.
             <br />
             <span className="text-gradient">Say what you think.</span>
           </h2>
-          <p className="text-gray text-base sm:text-lg max-w-xl mx-auto">
-            Back camera. Your world. Your voice.
-            That&apos;s it — no face needed, no editing, no pressure.
+          <p className="text-gray text-base sm:text-lg md:text-xl max-w-xl mx-auto leading-relaxed">
+            <span className="text-foreground font-medium">Back camera. Your world. Your voice.</span>
+            <br />
+            No face needed. No editing. No pressure.
           </p>
         </motion.div>
 
@@ -118,7 +125,7 @@ export default function Voices() {
                 {/* Play indicator */}
                 <div className="absolute top-3 right-3 flex items-center gap-1.5 opacity-70">
                   <div className="w-0 h-0 border-l-[6px] border-l-white border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent" />
-                  <span className="text-[10px] text-white font-medium">1:23</span>
+                  <span className="text-xs text-white font-medium">1:23</span>
                 </div>
 
                 {/* Audio waveform */}
@@ -136,18 +143,18 @@ export default function Voices() {
 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
-                  <p className="text-[11px] text-white/50 italic mb-1.5">{s.label}</p>
-                  <p className="text-xs sm:text-sm font-semibold text-white leading-snug mb-2">
+                  <p className="text-xs sm:text-sm text-white/70 italic mb-1.5">{s.label}</p>
+                  <p className="text-sm sm:text-base font-semibold text-white leading-snug mb-2">
                     &ldquo;{s.question}&rdquo;
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="text-[11px] text-white/60">{s.name}</span>
+                    <span className="text-xs sm:text-sm text-white/80 font-medium">{s.name} <span className="text-white/50 font-normal">· {s.time}</span></span>
                     <div className="flex items-center gap-1">
                       <svg width="10" height="10" viewBox="0 0 24 24" fill="none" className="text-lime">
                         <circle cx="12" cy="12" r="3" fill="currentColor" />
                         <circle cx="12" cy="12" r="7" stroke="currentColor" strokeWidth="2" opacity="0.4" />
                       </svg>
-                      <span className="text-[10px] text-lime">{s.resonates}</span>
+                      <span className="text-xs sm:text-sm text-lime font-medium">{s.resonates}</span>
                     </div>
                   </div>
                 </div>
@@ -157,12 +164,12 @@ export default function Voices() {
         </div>
 
         <motion.p
-          className="text-center text-sm text-gray mt-8"
+          className="text-center text-base sm:text-lg text-gray mt-10"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 1 }}
         >
-          Some people film their coffee. Some film the ceiling at 2am. Both work.
+          Every answer gets saved. <span className="text-foreground font-medium">Your voice, your world, that moment</span> — all kept.
         </motion.p>
       </div>
     </section>

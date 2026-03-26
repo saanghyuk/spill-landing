@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main id="top" className="min-h-screen noise-bg">
-      {/* HOOK: Back camera SNS. We ask, you answer. */}
+      {/* HOOK: Back camera app. We ask, you answer. */}
       <Hero />
 
       {/* SHOW: What Spill looks like — back camera, your world, your voice */}
@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* PUNCH: The diary that listens back */}
       <Punchline
-        line="You answer a question. Someone across the world goes 'same.' That's Spill."
+        line="Record today's you. Tomorrow it's already a memory. And somewhere out there, someone's thinking the same thing."
       />
 
       {/* EXPLAIN: 4 steps */}

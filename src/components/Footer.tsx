@@ -77,9 +77,9 @@ export default function Footer() {
             <span className="text-xl font-black">
               Sp<span className="text-lime">i</span>ll
             </span>
-            <span className="text-xs text-gray">Real you. Real me.</span>
+            <span className="text-xs sm:text-sm text-gray">Real you. Real me.</span>
           </div>
-          <p className="text-xs text-gray">© 2026 Spill. Coming soon.</p>
+          <p className="text-xs sm:text-sm text-gray">© 2026 Spill. Coming soon.</p>
         </div>
       </div>
     </footer>

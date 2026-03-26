@@ -5,20 +5,20 @@ import { useRef, useState, useEffect } from "react";
 
 const SCENARIOS = [
   {
-    yesterday: "I've been thinking about quitting my job.",
-    today: "If you quit tomorrow, what's the first thing you'd do?",
+    yesterday: "I've been binge-watching cooking videos but I can't cook at all.",
+    today: "So what's stopping you from actually trying?",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
     name: "Marcus",
   },
   {
-    yesterday: "I called my mom for the first time in weeks.",
-    today: "Is there something you still haven't told her?",
+    yesterday: "I keep saying I'll start working out tomorrow.",
+    today: "What's the real reason you keep pushing it?",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
     name: "Yuna",
   },
   {
-    yesterday: "I'm more comfortable being alone these days.",
-    today: "Is that peace, or are you avoiding something?",
+    yesterday: "I think I text my friends way more than they text me.",
+    today: "Does that bother you, or have you gotten used to it?",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
     name: "Sarah",
   },
