@@ -35,9 +35,9 @@ export default function TimeCapsule() {
             <span className="text-gradient">you&apos;ll hear today&apos;s you.</span>
           </h2>
           <p className="text-gray text-base sm:text-lg max-w-lg mx-auto">
-            Every answer you give becomes part of your archive.
-            A raw, unfiltered diary in your own voice.
-            Spill reminds you when it&apos;s been exactly one year.
+            Every answer becomes a piece of you — saved forever.
+            A diary in your own voice that you didn&apos;t know you were writing.
+            One year from now, Spill plays it back.
           </p>
         </motion.div>
 

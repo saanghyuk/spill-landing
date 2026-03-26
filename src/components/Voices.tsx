@@ -72,14 +72,15 @@ export default function Voices() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-5">
-            We ask.
+            A back camera
             <br />
-            <span className="text-gradient">You just answer.</span>
+            <span className="text-gradient">SNS.</span>
           </h2>
           <p className="text-gray text-base sm:text-lg max-w-xl mx-auto">
-            Hit record and talk. That&apos;s it. No need to plan what to say.
-            Show your face or don&apos;t — point the camera wherever.
-            No filters. No editing. Just you.
+            Front camera shows your face. Back camera shows your world.
+            <br />
+            Spill uses the back. Just film what you see, and talk.
+            60 seconds. No filters. No editing.
           </p>
         </motion.div>
 
@@ -163,7 +164,7 @@ export default function Voices() {
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 1 }}
         >
-          You don&apos;t need to be interesting. Just be honest.
+          Your world. Your voice. That&apos;s all we need.
         </motion.p>
       </div>
     </section>

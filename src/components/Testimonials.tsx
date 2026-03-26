@@ -5,17 +5,17 @@ import { useRef } from "react";
 
 const QUOTES = [
   {
-    text: "I said something out loud I've been thinking for months. To strangers. And it felt amazing.",
+    text: "I filmed my desk and talked about quitting my job. 40 seconds. Next morning, 12 people had resonated. I wasn't alone.",
     name: "Mia",
     detail: "after her first spill",
   },
   {
-    text: "I almost deleted it. Then someone resonated and said 'I feel that too.' I literally cried.",
+    text: "Someone I've never met said 'I feel that too' on my answer. That one notification changed my whole day.",
     name: "James",
     detail: "day 3",
   },
   {
-    text: "I filmed my ceiling fan for 2 minutes talking about my dad. Most honest I've been in years.",
+    text: "I pointed the camera at my ceiling and talked about my dad. It felt like writing a diary, except someone was actually listening.",
     name: "Sarah",
     detail: "after her first spill",
   },
@@ -36,7 +36,7 @@ export default function Testimonials() {
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5 }}
         >
-          After their first spill
+          Your story reaches someone
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

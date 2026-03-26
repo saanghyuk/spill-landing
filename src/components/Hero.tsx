@@ -71,9 +71,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
         >
-          Don&apos;t know what to say about yourself?
+          The back camera SNS.
           <br />
-          <span className="text-foreground font-semibold">We&apos;ll ask. You just answer.</span>
+          <span className="text-foreground font-semibold">We ask. You answer — with your voice, in 60 seconds.</span>
         </motion.p>
 
         {/* Question card — the experience */}

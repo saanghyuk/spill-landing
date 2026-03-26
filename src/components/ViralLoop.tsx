@@ -152,7 +152,7 @@ export default function ViralLoop() {
                       <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse" />
                       <span className="text-sm font-bold text-foreground">Now you&apos;re spilling</span>
                     </div>
-                    <span className="text-xs text-gray">0:12 / 3:00</span>
+                    <span className="text-xs text-gray">0:12 / 1:00</span>
                   </div>
                   <div className="glass rounded-xl px-4 py-3 border border-gray-border">
                     <p className="text-xs text-lime font-medium mb-1">Answering the same question</p>

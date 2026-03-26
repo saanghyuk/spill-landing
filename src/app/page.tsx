@@ -13,19 +13,18 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main id="top" className="min-h-screen noise-bg">
-      {/* HOOK: Stop scrolling. Here's a question. You know the answer. */}
+      {/* HOOK: Back camera SNS. We ask, you answer. */}
       <Hero />
 
-      {/* SHOW: This is what it looks like — raw, real, unfiltered */}
+      {/* SHOW: What Spill looks like — back camera, your world, your voice */}
       <Voices />
 
-      {/* PUNCH: Emotional interstitial */}
+      {/* PUNCH: The diary that listens back */}
       <Punchline
-        line="Every question disappears in 12 hours. Every answer stays forever."
-        sub="The more you share, the more real people you find."
+        line="A diary you write with your voice. Except someone out there is listening — and they feel the same way."
       />
 
-      {/* EXPLAIN: 4 steps — question, personal question, record, resonate */}
+      {/* EXPLAIN: 4 steps */}
       <HowItWorks />
 
       {/* VIRAL: Watching someone spill makes you want to spill */}
@@ -34,9 +33,10 @@ export default function Home() {
       {/* PROOF: What people felt after their first answer */}
       <Testimonials />
 
-      {/* PUNCH: Emotional interstitial */}
+      {/* PUNCH: Connection + discovery */}
       <Punchline
-        line="The more you answer, the more people you meet — people who think like you, and people who see the world completely differently."
+        line="Every question disappears in 12 hours. Every answer stays forever."
+        sub="The more you answer, the more people you meet — people like you, and people completely different from you."
       />
 
       {/* TIME: Your answers become a time capsule */}

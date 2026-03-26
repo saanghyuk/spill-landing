@@ -59,9 +59,9 @@ export default function EmotionalHook() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          We&apos;ll ask. You just answer.
+          A diary you speak into. A world that listens.
           <br />
-          That&apos;s all it takes to find the real you.
+          We ask. You answer. That&apos;s how you find the real you — and the real everyone else.
         </motion.p>
 
         <motion.div

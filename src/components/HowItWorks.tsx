@@ -40,7 +40,7 @@ export default function HowItWorks() {
                 <span className="text-gray">Same one for everyone.</span>
               </h3>
               <p className="text-gray leading-relaxed">
-                Every day at noon, a question drops for everyone on Spill.
+                Every morning at 9AM, a question drops for everyone on Spill.
                 Not small talk — the kind that makes you actually want to answer.
                 It disappears in 12 hours. If you feel it, just go.
               </p>
@@ -49,7 +49,7 @@ export default function HowItWorks() {
               <div className="glass rounded-2xl p-6 border border-gray-border w-full max-w-sm">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="w-2 h-2 bg-lime rounded-full animate-pulse" />
-                  <span className="text-[11px] text-lime font-semibold tracking-widest uppercase">12:00 PM — Today&apos;s question</span>
+                  <span className="text-[11px] text-lime font-semibold tracking-widest uppercase">9:00 AM — Today&apos;s question</span>
                 </div>
                 <p className="text-lg sm:text-xl font-bold leading-snug">
                   &ldquo;What&apos;s something you pretend doesn&apos;t bother you?&rdquo;
@@ -72,12 +72,12 @@ export default function HowItWorks() {
             <div className="flex-1">
               <div className="text-6xl font-black text-lime/10 mb-2">02</div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-3">
-                Plus one question
+                At night, one more.
                 <br />
-                <span className="text-gray">just for you.</span>
+                <span className="text-gray">Only you get this one.</span>
               </h3>
               <p className="text-gray leading-relaxed">
-                At midnight, you get a question no one else gets.
+                Every evening at 9PM, you get a question no one else gets.
                 AI remembers what you&apos;ve said and asks the follow-up
                 a good friend would. You just answer — that&apos;s it.
               </p>
@@ -105,7 +105,7 @@ export default function HowItWorks() {
                     <div className="w-4 h-4 rounded-full bg-lime flex items-center justify-center">
                       <span className="text-[7px] text-background font-bold">AI</span>
                     </div>
-                    <span className="text-[10px] text-lime font-semibold uppercase tracking-wider">12:00 AM — Your personal question</span>
+                    <span className="text-[10px] text-lime font-semibold uppercase tracking-wider">9:00 PM — Your personal question</span>
                   </div>
                   <p className="text-base font-bold leading-snug">
                     &ldquo;If you quit tomorrow, what&apos;s the first thing you&apos;d do?&rdquo;
@@ -125,14 +125,13 @@ export default function HowItWorks() {
             <div className="flex-1">
               <div className="text-6xl font-black text-lime/10 mb-2">03</div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-3">
-                Hit record. Talk.
+                Flip the camera.
                 <br />
-                <span className="text-gray">Point the camera anywhere.</span>
+                <span className="text-gray">Show what you see.</span>
               </h3>
               <p className="text-gray leading-relaxed">
-                Point the camera wherever — your face, your ceiling, whatever feels right.
-                3 minutes max. No filters. No editing. No retakes.
-                You don&apos;t need to be good at this. Just be you.
+                Back camera only. Film your desk, your walk, your ceiling — whatever&apos;s in front of you.
+                Your voice does the rest. 60 seconds. No filters. No editing. No retakes.
               </p>
             </div>
             <div className="flex-1 flex justify-center">
