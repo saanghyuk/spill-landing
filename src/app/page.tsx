@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* PUNCH: The diary that listens back */}
       <Punchline
-        line="A diary you write with your voice. Except someone out there is listening — and they feel the same way."
+        line="You answer a question. Someone across the world goes 'same.' That's Spill."
       />
 
       {/* EXPLAIN: 4 steps */}
@@ -35,8 +35,8 @@ export default function Home() {
 
       {/* PUNCH: Connection + discovery */}
       <Punchline
-        line="Every question disappears in 12 hours. Every answer stays forever."
-        sub="The more you answer, the more people you meet — people like you, and people completely different from you."
+        line="Every question gone in 12 hours. But your answers? Saved forever."
+        sub="The more you answer, the more interesting people you find."
       />
 
       {/* TIME: Your answers become a time capsule */}

@@ -40,9 +40,9 @@ export default function HowItWorks() {
                 <span className="text-gray">Same one for everyone.</span>
               </h3>
               <p className="text-gray leading-relaxed">
-                Every morning at 9AM, a question drops for everyone on Spill.
-                Not small talk — the kind that makes you actually want to answer.
-                It disappears in 12 hours. If you feel it, just go.
+                Every morning at 9AM, everyone on Spill gets the same question.
+                Sometimes funny, sometimes deep — always the kind you actually want to answer.
+                Gone in 12 hours.
               </p>
             </div>
             <div className="flex-1 flex justify-center">
@@ -52,7 +52,7 @@ export default function HowItWorks() {
                   <span className="text-[11px] text-lime font-semibold tracking-widest uppercase">9:00 AM — Today&apos;s question</span>
                 </div>
                 <p className="text-lg sm:text-xl font-bold leading-snug">
-                  &ldquo;What&apos;s something you pretend doesn&apos;t bother you?&rdquo;
+                  &ldquo;What&apos;s the most useless thing you&apos;re weirdly good at?&rdquo;
                 </p>
                 <div className="mt-4 flex items-center justify-between">
                   <span className="text-xs text-gray">Gone in 11h 23m</span>
@@ -77,9 +77,9 @@ export default function HowItWorks() {
                 <span className="text-gray">Only you get this one.</span>
               </h3>
               <p className="text-gray leading-relaxed">
-                Every evening at 9PM, you get a question no one else gets.
-                AI remembers what you&apos;ve said and asks the follow-up
-                a good friend would. You just answer — that&apos;s it.
+                At 9PM, you get a question only you get.
+                AI picks up on what you&apos;ve been talking about and asks the next thing.
+                Like a friend who actually remembers what you said yesterday.
               </p>
             </div>
             <div className="flex-1 flex justify-center">
@@ -127,11 +127,11 @@ export default function HowItWorks() {
               <h3 className="text-2xl sm:text-3xl font-bold mb-3">
                 Flip the camera.
                 <br />
-                <span className="text-gray">Show what you see.</span>
+                <span className="text-gray">Talk for 60 seconds.</span>
               </h3>
               <p className="text-gray leading-relaxed">
-                Back camera only. Film your desk, your walk, your ceiling — whatever&apos;s in front of you.
-                Your voice does the rest. 60 seconds. No filters. No editing. No retakes.
+                Back camera — film your desk, your walk, your ceiling, whatever.
+                Just talk. No prep. No filter. No editing. It&apos;s done before you overthink it.
               </p>
             </div>
             <div className="flex-1 flex justify-center">
@@ -181,9 +181,9 @@ export default function HowItWorks() {
                 <span className="text-gray">Not &ldquo;like.&rdquo; Resonate.</span>
               </h3>
               <p className="text-gray leading-relaxed">
-                No comments. No likes. When your words hit someone, they resonate —
-                &ldquo;I feel that too,&rdquo; &ldquo;That took courage.&rdquo;
-                The more you answer, the more you discover people like you — and people completely different from you.
+                No comments. No likes. Just reactions like &ldquo;same 😂&rdquo; or &ldquo;that took courage.&rdquo;
+                The more you answer, the more people you meet — ones who think like you,
+                and ones who see things totally differently.
               </p>
             </div>
             <div className="flex-1 flex justify-center">

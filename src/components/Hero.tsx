@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const QUESTIONS = [
-  "What are you afraid to say out loud?",
   "What do you keep thinking about at 2am?",
-  "What's the lie you tell yourself most often?",
+  "What's your hottest take that nobody asked for?",
   "Who do you miss but won't text first?",
-  "What would you say if no one was judging?",
+  "What's the most useless thing you're good at?",
+  "What would you do if no one was watching?",
 ];
 
 export default function Hero() {
@@ -71,9 +71,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
         >
-          The back camera SNS.
+          A back camera SNS.
           <br />
-          <span className="text-foreground font-semibold">We ask. You answer — with your voice, in 60 seconds.</span>
+          <span className="text-foreground font-semibold">A question drops. You film what you see, and talk. 60 seconds.</span>
         </motion.p>
 
         {/* Question card — the experience */}
@@ -106,7 +106,7 @@ export default function Hero() {
               </AnimatePresence>
             </div>
 
-            <p className="text-sm text-lime/70 mt-4 font-medium">You already know your answer. But it disappears in 12 hours.</p>
+            <p className="text-sm text-lime/70 mt-4 font-medium">Gone in 12 hours. Answer or miss it.</p>
 
             <div className="flex items-center justify-center gap-3 mt-4 text-xs text-gray">
               <div className="flex -space-x-1.5">

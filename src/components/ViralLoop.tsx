@@ -25,8 +25,7 @@ export default function ViralLoop() {
             <span className="text-gradient">makes you want to spill.</span>
           </h2>
           <p className="text-gray text-base sm:text-lg max-w-lg mx-auto">
-            You hear someone answer honestly, and something clicks —
-            you want to answer too.
+            You hear someone&apos;s answer and think &ldquo;wait, I have something to say too.&rdquo;
           </p>
         </motion.div>
 
